@@ -37,8 +37,8 @@ func (TestPo) TableName() string {
 	return "test_po"
 }
 
-// TestTransactionImpl_Transaction 测试事务，一个使用的栗子
-func TestTransactionImpl_Transaction(t *testing.T) {
+// TestTransactionImpl_TransactionExample 测试事务，一个使用的栗子
+func TestTransactionImpl_TransactionExample(t *testing.T) {
 	// mysql的测试, 本地的链接
 	localDsn := "root:123456@tcp(127.0.0.1:3306)/local_test?charset=utf8mb4"
 	var (
