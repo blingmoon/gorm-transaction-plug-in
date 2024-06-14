@@ -16,7 +16,7 @@ gorm.DB.Transaction(fc func(tx *DB) error, opts ...*sql.TxOptions) (err error)
 package main
 
 
-TxnProvider1 Provider
+var TxnProvider1 Provider
 
 func newGormDBAndTxnProvider(dsn string) (*gorm.DB, Provider, error) {
 	conn, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
