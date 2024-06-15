@@ -3,9 +3,9 @@
 # 背景
 
 gorm 提供了事务的方法
-gorm.DB.Transaction(fc func(tx *DB) error, opts ...*sql.TxOptions) (err error)
-这个方法不可重用，嵌套起来也比较麻烦，提供一个插件将事务txn注入到context中，方便再同一个上下文中传递
-可以更加的关注业务上面的逻辑，而不是关注事务的传递
+gorm.DB.Transaction(fc func(tx *DB) error, opts ...*sql.TxOptions) (err error) 没有用到context<br/>
+提供一个插件将事务txn注入到context中，方便再同一个上下文中传递 可以更加的关注业务上面的逻辑，而不是关注事务的传递
+
 
 # 使用说明
 每创建一个gorm.DB的时候,需要完成两件，
